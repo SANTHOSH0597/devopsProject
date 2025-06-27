@@ -1,18 +1,17 @@
-# Use Node.js base image
+# Use official Node.js image
 FROM node:18
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json ./
-RUN npm install
+# Install live-server globally
+RUN npm install -g live-server
 
-# Copy the rest of the files
+# Copy all project files
 COPY . .
 
-# Expose the port live-server uses
+# Expose live-server default port
 EXPOSE 8080
 
-# Start the live-server
-CMD ["npm", "start"]
+# Run live-server
+CMD ["live-server", "--port=8080", "--host=0.0.0.0", "--no-browser"]
