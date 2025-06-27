@@ -8,8 +8,8 @@ This Project demonstrates simple DEVOPS practices including Simple Web Developme
 
 # HOW TO RUN
 
-## Build the image
-docker build -t live-server-app .
+## Build the Docker image
+docker build -t cew-live-server .
 
-## Run the container
-docker run -p 8080:8080 live-server-app
+## Run the container and map port 8080
+docker run -p 8080:8080 cew-live-server
