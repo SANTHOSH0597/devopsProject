@@ -1,0 +1,17 @@
+{
+  "name": "my-v0-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'no build script'"
+  },
+  "name": "live-server-docker",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "live-server --host=0.0.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
